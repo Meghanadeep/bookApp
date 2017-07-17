@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+	   <h1 class="project_heading">Top 10 things  you should keep doing in life</h1>	
+	</div>
+	<div class="event" ng-repeat="event in lc.events track by $index">
+		<h2 class="project_heading">{{$index+1}}</h2>
+		<div>
+			<div class="info">
+				<p>{{event.name}}</p>
+				<p>{{event.summary}}</p>
+			</div>
+            <div class="image_holder"> 
+            	<img src={{'images/'+event.imageName+'.jpg'}}>
+            </div>
+
+
+		</div>
+	</div>
+</div>
